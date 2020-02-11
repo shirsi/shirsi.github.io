@@ -1,3 +1,100 @@
-*{
+/* *{
   border: 1px solid gold;
+  background-image:url("https://www.dccomics.com/sites/default/files/field/image/TitansS2_blog_5d5c3b184956c0.38671675.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+} */
+body {
+  background-image:url("https://imgix-media.wbdndc.net/asset/series/164/5d7bd61d/poster.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  margin: auto;
+}
+.body {
+  background-color: rgba(255, 255, 255 , 0.8);
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  overflow: scroll;
+}
+.characters {
+  /* overflow-y: scroll; */
+}
+ ul{
+list-style: none;
+ }
+
+.photos img {
+  display: none;
+  width: 20vw;
+}
+.photos img:first-of-type {
+  display: block;
+}
+
+nav {
+  width: 100vw;
+  height: 4vh;
+  background-color: rgb(11,75,100);
+  display: inline-flex;
+  /* padding: 1em 7em; */
+  justify-content: space-around;
+  margin: 0;
+}
+ a{
+   color: rgb(144,186,179);
+   margin: auto;
+   text-align: center;
+ }
+ form {
+   margin: auto;
+
+ }
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* .sticky + .body {
+  padding-top: 60px;
+} */
+
+/* Search       */
+
+h1{
+text-align: center;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3em;
+}
+.info img {
+  width: 50%;
+  height: 70%;
+
+}
+.characterInfo{
+  float: right;
+
+}
+/*    Photos    */
+
+.photos {
+display: flex;
+justify-content: center;
+}
+.arrows {
+display: flex;
+justify-content: center;
 }
