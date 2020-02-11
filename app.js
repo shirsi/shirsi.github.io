@@ -1,15 +1,15 @@
 // console.log("HEY");
 $(() => {
-// console.log($('.button'));
+
 ////////////////////////////////////////////////////////////////////
 // Search Function
 ////////////////////////////////////////////////////////////////////
 $('.button').on('click', (event) => {
   event.preventDefault()
-  console.log("whats up");
+  console.log("whats");
   let userInput = $('input[type="text"]').val()
   let link = `https://www.superheroapi.com/api.php/10222119373912674/search/${userInput}`
-
+console.log(link);
 
 
 
@@ -22,13 +22,17 @@ $('.button').on('click', (event) => {
 
   }).then((data)=>{
 
-// console.log(data);
+console.log(data);
+console.log(data.results.length);
+for (i = 0; i< data.results.length; i++){
+  const $div = $('<div>').appendTo('.characters')
+  const $h2 = $('<h2>')
+          .text(`${data.results[i].name}`)
+          .appendTo($div)
+      const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
+        $div.append($img)
 
-    const $body = $('body')
-    const $div = $(`<div><h3>${data.results[i].name}</h3></div>`);
-      $('.characters').append($div)
-
-
+}
   })
 
 })
