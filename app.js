@@ -36,11 +36,8 @@ console.log(data);
 console.log(data.results.length);
 for (i = 0; i< data.results.length; i++){
   const $div = $('<div>').appendTo('.characters').addClass("info")
-    const $h2 = $('<h2>')
-      .text(`${data.results[i].name}`)
-            .appendTo($div)
-            const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
-              $div.append($img)
+  const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
+    $div.append($img)
   const $infodiv =$('<div>').appendTo($div).addClass('characterInfo')
 
 
