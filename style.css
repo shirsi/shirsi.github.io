@@ -138,8 +138,17 @@ padding-bottom: 2em;
 }
 @media (max-width: 600px) {
   .hero  {
-    height: 40vh;
-    width: 35vw;
-   margin: 0.5em;
-  
+  height: 30vh;
+  width: 35vw;
+   margin: 0.5;
+ }
+   .hero img {
+     width: 35vw;
+     height: 30vh;
+     align-items: center;
+}
+
+
+
+
 }
