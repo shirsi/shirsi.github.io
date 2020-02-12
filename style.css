@@ -108,9 +108,12 @@ text-align: center;
 
 }
 .info img , .favorite img {
+  display: flex;
+  justify-content: center;
   width: 30vw;
   height: 40vh;
   align-items: center;
+
 
 }
 .characterInfo , .favoriteInfo{
