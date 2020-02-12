@@ -9,7 +9,7 @@
 } */
 body {
   background-image:url("https://imgix-media.wbdndc.net/asset/series/164/5d7bd61d/poster.jpg");
-  background-color: inherit;
+  background-color:rgba(255, 255, 255 , 0.0) ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -68,16 +68,17 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   }
 .hero  {
- height: 20%;
- width: 20%;
- margin: 0;
+ display:
+ margin: 1em;
 }
 
 .hero img{
- height: 100%;
- width: 100%;
+ height: 20vh;
+ width: 10vw;
+
 }
 
 
