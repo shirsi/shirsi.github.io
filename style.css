@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment:scroll;
+  background-attachment: local;
   width: 100vw;
   height: 100vh;
   /* overflow: scroll; */
@@ -27,7 +27,7 @@ body {
   overflow: scroll;
 }
 .characters {
-  /* overflow-y: scroll; */
+
 }
  ul{
 list-style: none;
@@ -74,6 +74,8 @@ nav {
   }
 .hero  {
  margin: 1em;
+
+
 }
 
 .hero img{
@@ -106,16 +108,17 @@ text-align: center;
 
 }
 .info img , .favorite img {
-  width: 20vw;
-  height: 30vh;
+  width: 30vw;
+  height: 40vh;
   align-items: center;
 
 }
 .characterInfo , .favoriteInfo{
   float: right;
-  width: 20vw;
-  height: 30vh;
-  /* padding: 2.5em; */
+
+
+
+  /* padding: 5em; */
 }
 /*    Photos    */
 
@@ -138,5 +141,5 @@ padding-bottom: 2em;
     height: 40vh;
     width: 35vw;
    margin: 0.5em;
-  }
+  
 }
