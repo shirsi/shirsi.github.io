@@ -47,13 +47,12 @@ nav {
   /* padding: 1em 7em; */
   justify-content: space-around;
   margin: 0;
-  font-family: 'Coda Caption', sans-serif;
 }
  a{
    color: rgb(144,186,179);
    margin: auto;
    text-align: center;
-   text-decoration: none;
+   text-decoration:
  }
  form {
    margin: auto;
@@ -69,11 +68,11 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:center;
   }
 .hero  {
- display:
- margin: 1em;
+ /* display: */
+ margin: 0.5em;
 }
 
 .hero img{
@@ -86,9 +85,9 @@ nav {
 
 
 
-.sticky + .body {
+/* .sticky + .body {
   padding-top: 60px;
-}
+} */
 
 /* Search       */
 
@@ -113,24 +112,22 @@ text-align: center;
 .characterInfo , .favoriteInfo{
   float: right;
   width: 20vw;
-  height: 30vh
-  padding: 2.5em;
+  height: 30vh;
+  /* padding: 2.5em; */
 }
 /*    Photos    */
 
 .photos {
 display: flex;
 justify-content: center;
-padding-top: 2em'
+padding-top: 2em;
+}
+.photos img {
+  height: 25vh;
+  width: 20vw;
 }
 .arrows {
 display: flex;
 justify-content: center;
 padding-bottom: 2em;
-}
-
-
-.favorite img {
-  width: 50%;
-  height: 70%;
 }
