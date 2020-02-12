@@ -36,10 +36,13 @@ console.log(data);
 console.log(data.results.length);
 for (i = 0; i< data.results.length; i++){
   const $div = $('<div>').appendTo('.characters').addClass("info")
+    const $h2 = $('<h2>')
+      .text(`${data.results[i].name}`)
+            .appendTo($div)
+            const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
+              $div.append($img)
   const $infodiv =$('<div>').appendTo($div).addClass('characterInfo')
-  const $h2 = $('<h2>')
-    .text(`${data.results[i].name}`)
-          .appendTo($infodiv)
+
 
   const $name = $('<h3>')
     .text(`Full name: ${data.results[i].biography['full-name']}`)
@@ -100,8 +103,7 @@ for (i = 0; i< data.results.length; i++){
           let durability = $('<li>')
             .text(`Durability: ${data.results[i].powerstats.durability}`)
             .appendTo($powerstats)
-      const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
-        $div.append($img)
+
 
 }
   })
@@ -192,11 +194,12 @@ $('.hero').on('click',(event) => {
 console.log(data);
 {
 const div = $('<div>').addClass('favs').appendTo(".favorite")
-
+const $h2 = $('<h2>')
+  .text(`${data.name}`)
+        .appendTo(".favs")
+        const $img = $("<img />").attr('src' ,`${data.image.url}`)
+          $img.appendTo(".favs")
   const $infodiv =$('<div>').appendTo(".favs").addClass('favoriteInfo')
-  const $h2 = $('<h2>')
-    .text(`${data.name}`)
-          .appendTo($infodiv)
 
   const $name = $('<h3>')
     .text(`Full name: ${data.biography['full-name']}`)
@@ -258,8 +261,7 @@ const div = $('<div>').addClass('favs').appendTo(".favorite")
                         .text(`Durability: ${data.powerstats.durability}`)
                         .appendTo($powerstats)
 
-      const $img = $("<img />").attr('src' ,`${data.image.url}`)
-        $img.appendTo(".favs")
+
 
   }
   })
