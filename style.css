@@ -12,15 +12,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
   /* overflow: scroll;  */
   margin: auto;
 }
+
 .body {
   background-color: rgba(255, 255, 255 , 0.7);
   width: 80vw;
-  height: 100vh;
+  height: 95vh;
   margin: auto;
   overflow: scroll;
 }
@@ -71,14 +73,13 @@ nav {
   align-items:center;
   }
 .hero  {
-  height: 20vh;
-  width: 15vw;
- margin: 0.5em;
+ margin: 1em;
 }
 
 .hero img{
  height: 20vh;
  width: 15vw;
+ align-items: center;
 
 }
 
