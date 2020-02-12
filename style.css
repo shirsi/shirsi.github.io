@@ -71,8 +71,9 @@ nav {
   align-items:center;
   }
 .hero  {
- /* display: */
- margin: 0.5em;
+  height: 20vh;
+  width: 15vw;
+ margin: 1em;
 }
 
 .hero img{
