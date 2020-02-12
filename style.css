@@ -47,11 +47,13 @@ nav {
   /* padding: 1em 7em; */
   justify-content: space-around;
   margin: 0;
+  font-family: 'Coda Caption', sans-serif;
 }
  a{
    color: rgb(144,186,179);
    margin: auto;
    text-align: center;
+   text-decoration: none;
  }
  form {
    margin: auto;
@@ -84,9 +86,9 @@ nav {
 
 
 
-/* .sticky + .body {
+.sticky + .body {
   padding-top: 60px;
-} */
+}
 
 /* Search       */
 
@@ -94,20 +96,24 @@ h1{
 text-align: center;
 }
 
-.info{
+.info , .favs{
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  padding: 3em;
-}
-.info img {
-  width: 50%;
-  height: 70%;
+  background-color: rgba(120,170,163,0.3);
+  margin: 2em;
+  padding: 2em;
 
 }
-.characterInfo{
+.info img , .favorite img {
+  width: 20vw;
+  height: 30vh;
+  align-items: center;
+
+}
+.characterInfo , .favoriteInfo{
   float: right;
-  background-color: rgba(120,170,163,0.3);
+  width: 20vw;
+  height: 30vh
   padding: 2.5em;
 }
 /*    Photos    */
@@ -115,8 +121,16 @@ text-align: center;
 .photos {
 display: flex;
 justify-content: center;
+padding-top: 2em'
 }
 .arrows {
 display: flex;
 justify-content: center;
+padding-bottom: 2em;
+}
+
+
+.favorite img {
+  width: 50%;
+  height: 70%;
 }

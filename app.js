@@ -79,7 +79,7 @@ let input = 1
 // console.log(link);
 
 
-for (i= 1; i<=20;i++){
+for (i= 1; i<=14;i++){
 input =+i
 let link = `https://www.superheroapi.com/api.php/10222119373912674/${input}`
 // console.log(link);
@@ -102,7 +102,7 @@ console.log("Error")
 
 
 let currentImgIndex = 0
-let highestIndex = 20
+let highestIndex = 13
 $('.next').on('click', () => {
   event.preventDefault()
 $('.photos').children().eq(currentImgIndex).css('display', 'none');
@@ -149,8 +149,9 @@ $('.hero').on('click',(event) => {
 
 console.log(data);
 {
-  const $div = $('<div>').appendTo(".favorite")
-  const $infodiv =$('<div>').appendTo($div).addClass('.favorite]]')
+const div = $('<div>').addClass('favs').appendTo(".favorite")
+
+  const $infodiv =$('<div>').appendTo(".favs").addClass('favoriteInfo')
   const $h2 = $('<h2>')
     .text(`${data.name}`)
           .appendTo($infodiv)
@@ -167,7 +168,7 @@ console.log(data);
                   .appendTo($ul)
                 }
       const $img = $("<img />").attr('src' ,`${data.image.url}`)
-        $div.append($img)
+        $img.appendTo(".favs")
 
   }
   })
