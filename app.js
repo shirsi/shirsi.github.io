@@ -79,7 +79,7 @@ for (i = 0; i< data.results.length; i++){
     let occupation = $('<li>').text(`Occupation:       ${data.results[i].work.occupation}`)
               .appendTo($work)
     let base = $('<li>').text(`Base:       ${data.results[i].work.base}`)
-                        .appendTo($work)
+              .appendTo($work)
           let $powerstats = $('<ul>').appendTo($infodiv).addClass('powerstats').text("Power Stats: ")
               let intelligence = $('<li>')
                 .text(`Intelligence: ${data.results[i].powerstats.intelligence}`)
