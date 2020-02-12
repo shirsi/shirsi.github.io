@@ -15,6 +15,7 @@ $('.button').on('click', (event) => {
 
   event.preventDefault()
     $(".characters").empty()
+    $(".favorite").empty()
   console.log("whats");
   let userInput = $('input[type="text"]').val()
   let link = `https://www.superheroapi.com/api.php/10222119373912674/search/${userInput}`
@@ -35,7 +36,7 @@ console.log(data);
 console.log(data.results.length);
 for (i = 0; i< data.results.length; i++){
   const $div = $('<div>').appendTo('.characters').addClass("info")
-  const $infodiv =$('<div>').appendTo($div).addClass('.characterInfo')
+  const $infodiv =$('<div>').appendTo($div).addClass('characterInfo')
   const $h2 = $('<h2>')
     .text(`${data.results[i].name}`)
           .appendTo($infodiv)
@@ -43,14 +44,7 @@ for (i = 0; i< data.results.length; i++){
   const $name = $('<h3>')
     .text(`Full name: ${data.results[i].biography['full-name']}`)
     .appendTo($infodiv)
-  // for (p = 0; x< data.results[i].powerstats.length; x++){
-    let $powerstats = $('<ul>').appendTo($infodiv).addClass('powerstats').text("Power Stats: ")
-    let intelligence = $('<li>')
-          .text(`Intelligence: ${data.results[i].powerstats.intelligence}`)
-          .appendTo($powerstats)
 
-          console.log(data.results[i].powerstats);
-// }
     const $ul =$('<ul>').text("Aliases: ")
     $infodiv.append($ul)
       for (x = 0; x< data.results[i].biography.aliases.length; x++){
@@ -58,6 +52,15 @@ for (i = 0; i< data.results.length; i++){
                   .text(`${data.results[i].biography.aliases[x]}`)
                   .appendTo($ul)
                 }
+          const $first = $('<h4>')
+          .text(`First-appearance: ${data.results[i].biography['first-appearance']}`)
+          .appendTo($infodiv)
+                let $powerstats = $('<ul>').appendTo($infodiv).addClass('powerstats').text("Power Stats: ")
+                let intelligence = $('<li>')
+                      .text(`Intelligence: ${data.results[i].powerstats.intelligence}`)
+                      .appendTo($powerstats)
+
+                      console.log(data.results[i].powerstats);
       const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
         $div.append($img)
 
@@ -76,7 +79,7 @@ let input = 1
 // console.log(link);
 
 
-for (i= 1; i<=14;i++){
+for (i= 1; i<=20;i++){
 input =+i
 let link = `https://www.superheroapi.com/api.php/10222119373912674/${input}`
 // console.log(link);
@@ -99,7 +102,7 @@ console.log("Error")
 
 
 let currentImgIndex = 0
-let highestIndex = 13
+let highestIndex = 20
 $('.next').on('click', () => {
   event.preventDefault()
 $('.photos').children().eq(currentImgIndex).css('display', 'none');
@@ -125,7 +128,8 @@ if (currentImgIndex < highestIndex ) {
 }
 $('.hero').on('click',(event) => {
   event.preventDefault()
-  $(".favoriteCharactersInfo").empty()
+  $(".characters").empty()
+  $(".favorite").empty()
 
   let subject = $(event.target).attr('id')
   console.log(event.target);
@@ -145,8 +149,8 @@ $('.hero').on('click',(event) => {
 
 console.log(data);
 {
-  const $div = $('<div>').appendTo(".favoriteCharacters")
-  const $infodiv =$('<div>').appendTo($div).addClass('.favoriteCharactersInfo')
+  const $div = $('<div>').appendTo(".favorite")
+  const $infodiv =$('<div>').appendTo($div).addClass('.favorite]]')
   const $h2 = $('<h2>')
     .text(`${data.name}`)
           .appendTo($infodiv)
@@ -154,14 +158,7 @@ console.log(data);
   const $name = $('<h3>')
     .text(`Full name: ${data.biography['full-name']}`)
     .appendTo($infodiv)
-  // for (p = 0; x< data.results[i].powerstats.length; x++){
-    let $powerstats = $('<ul>').appendTo($infodiv).addClass('powerstats').text("Power Stats: ")
-    let intelligence = $('<li>')
-          .text(`Intelligence: ${data.powerstats.intelligence}`)
-          .appendTo($powerstats)
 
-          console.log(data.powerstats);
-  // }
     const $ul =$('<ul>').text("Aliases: ")
     $infodiv.append($ul)
       for (x = 0; x< data.biography.aliases.length; x++){
