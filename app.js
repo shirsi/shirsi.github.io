@@ -106,7 +106,7 @@ let input = 1
 
 
 
-let link = `http://superheroapi.com/api.php/10222119373912674/search/a`
+let link = `https://superheroapi.com/api.php/10222119373912674/search/a`
 // console.log(input);
 $.ajax({
   url:link ,
