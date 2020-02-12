@@ -104,24 +104,26 @@ let input = 1
 // console.log(link);
 
 
-
-
-let link = `http://superheroapi.com/api.php/10222119373912674/search/a`
+for (i= 1; i<=15;i++){
+input =+i
+let link = `https://www.superheroapi.com/api.php/10222119373912674/${input}`
+// console.log(link);
 // console.log(input);
 $.ajax({
   url:link ,
   type: "GET"
 
 }).then((data)=>{
-  console.log(data.results.length);
-  for (i= 1; i<=data.results.length;i++){
   console.log(data);
 
-    const $img = $("<img />").attr('src' , `${data.results[i].image.url}`).appendTo('.photos').addClass('.pics')
-// console.log($img);
+  const $name = $('<h3>')
+    .text(`${data.name}`)
+    .appendTo('.pics').addClass('popInfo')
+console.log($name);
+  const $img = $("<img />").attr('src' , data.image.url).appendTo('.photos').addClass('.pics')
 
 
-}
+
 },  (()=>{
 
 console.log("Error")
@@ -129,7 +131,7 @@ console.log("Error")
 
 
 let currentImgIndex = 0
-let highestIndex = 430
+let highestIndex = 14
 $('.next').on('click', () => {
   event.preventDefault()
 $('.photos').children().eq(currentImgIndex).css('display', 'none');
@@ -151,8 +153,13 @@ if (currentImgIndex < highestIndex ) {
       $('.photos').children().eq(currentImgIndex).css('display', 'block');
 
 })
-
-
+}
+$('.pics').on('mouseout', (event) => {
+  ('.popInfo').hide()
+})
+$('.pics').on('mouseover', (event) => {
+  ('.popInfo').show()
+})
 
 $('.hero').on('click',(event) => {
   event.preventDefault()

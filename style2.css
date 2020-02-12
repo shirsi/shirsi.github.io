@@ -9,7 +9,7 @@
 } */
 body {
   background-image:url("https://imgix-media.wbdndc.net/asset/series/164/5d7bd61d/poster.jpg");
-  background-size: cover;
+  background-size: cover;x
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: local;
@@ -122,12 +122,12 @@ text-align: center;
 }
 /*    Photos    */
 
-.photos {
+.pics {
 display: flex;
 justify-content: center;
 padding-top: 2em;
 }
-/* .photos img {
+/* .pics img {
   height: 25vh;
   width: 20vw;
 } */
