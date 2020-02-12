@@ -9,6 +9,7 @@
 } */
 body {
   background-image:url("https://imgix-media.wbdndc.net/asset/series/164/5d7bd61d/poster.jpg");
+  background-color: inherit;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
