@@ -14,7 +14,7 @@ body {
   background-position: center;
   width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll;  */
   margin: auto;
 }
 .body {
