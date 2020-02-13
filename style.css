@@ -1,12 +1,4 @@
-/* *{
-  border: 1px solid gold;
-  background-image:url("https://www.dccomics.com/sites/default/files/field/image/TitansS2_blog_5d5c3b184956c0.38671675.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-} */
+
 body {
   background-image:url("https://imgix-media.wbdndc.net/asset/series/164/5d7bd61d/poster.jpg");
   background-size: cover;
@@ -15,7 +7,6 @@ body {
   background-attachment: local;
   width: 100vw;
   height: 100vh;
-  /* overflow: scroll; */
   margin: auto;
 }
 
