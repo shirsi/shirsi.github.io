@@ -162,7 +162,7 @@ padding-bottom: 2em;
   height: 30vh;
   width: 35vw;
    margin: 0.5;
-   font-size: 50px;
+
  }
    .hero img {
      width: 35vw;
@@ -178,14 +178,7 @@ padding-bottom: 2em;
 }
 .favoriteBtn{
   display: flex;
-  /* padding: 5em; */
   justify-content: space-around;
   flex-wrap: wrap;
   align-items:center;
   }
-
-.favoriteCharacters {
-  width: 90vw;
-  height: 40vh;
-  margin-bottom: 1em;
-}
