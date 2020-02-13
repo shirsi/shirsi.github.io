@@ -97,6 +97,13 @@ nav {
  align-items: center;
 
 }
+h4 {
+margin: 0;
+}
+h5 {
+  margin-bottom: 0;
+}
+
 .favorite, .info  {
 background-color: rgba(120,170,163,0.3);
 display: flex;
@@ -151,8 +158,14 @@ text-align: center;
       font-size: 1.3em;
       padding-top: 0.3;
       margin: 0;
-  /* padding: 5em; */
+
 }
+
+
+
+
+
+
 /*    Photos    */
 
 .photos {
