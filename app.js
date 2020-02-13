@@ -36,6 +36,9 @@ console.log(data);
 console.log(data.results.length);
 for (i = 0; i< data.results.length; i++){
   const $div = $('<div>').appendTo('.characters').addClass("info")
+  const $h2 = $('<h2>')
+   .text(`${data.results[i].name}`)
+         .appendTo($div)
   const $img = $("<img />").attr('src' ,`${data.results[i].image.url}`)
     $div.append($img)
   const $infodiv =$('<div>').appendTo($div).addClass('characterInfo')
@@ -110,13 +113,9 @@ for (i = 0; i< data.results.length; i++){
 
 ////////////////////////////////////////////////////////////////////
 // Photo Array
-////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
 let input = 1
-
-// let link = `https://www.superheroapi.com/api.php/10222119373912674/${userInput}`
-// console.log(link);
-
-
 
 
 let link = `https://superheroapi.com/api.php/10222119373912674/search/a`
@@ -165,7 +164,9 @@ if (currentImgIndex < highestIndex ) {
 
 })
 
-
+//////////////////////////////////////////////////////////////////
+// Fav characters
+///////////////////////////////////////////////////////////////////
 
 $('.hero').on('click',(event) => {
   event.preventDefault()
