@@ -33,6 +33,11 @@ body {
 list-style: none;
  }
 
+ .photos img h2 {
+   display: none;
+   width: 20vw;
+ }
+
 .photos img {
   display: none;
   width: 20vw;
@@ -46,19 +51,27 @@ nav {
   height: 4vh;
   background-color: rgb(11,75,100);
   display: inline-flex;
-  /* padding: 1em 7em; */
   justify-content: space-around;
-  margin: 0;
+  margin: auto;
 }
  a{
    color: rgb(144,186,179);
    margin: auto;
    text-align: center;
-   text-decoration:
+   text-decoration:none;
+   padding: inherit;
  }
+ a:hover {
+  background-color: rgb(144,186,179);
+  color: white;
+  width: 10vw;
+  height: 2.5vh;
+  padding: inherit;
+  text-align: center;
+  margin: auto;
+}
  form {
-   margin: auto;
-
+   margin: auto
  }
  .sticky {
   position: fixed;
