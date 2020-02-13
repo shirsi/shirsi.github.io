@@ -76,9 +76,12 @@ nav {
   flex-wrap: wrap;
   align-items:center;
   }
+.hero:hover {
+background-color: rgba(144,186,179, 0.4);
+padding: 1em;
+}
 .hero  {
  margin: 1em;
-
 
 }
 

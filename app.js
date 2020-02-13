@@ -16,7 +16,6 @@ $('.button').on('click', (event) => {
   event.preventDefault()
     $(".characters").empty()
     $(".favorite").empty()
-  console.log("whats");
   let userInput = $('input[type="text"]').val()
   let link = `https://www.superheroapi.com/api.php/10222119373912674/search/${userInput}`
 console.log(link);
@@ -128,8 +127,7 @@ $.ajax({
   console.log(data.results.length);
   for (i= 1; i<=data.results.length;i++){
   console.log(data);
-  const $img = $("<img />").attr('src' , `${data.results[i].image.url}`).appendTo('.photos').addClass('.pics').text(`${data.results[i].name}`)
-
+  const $img = $("<img />").attr('src' , `${data.results[i].image.url}`).appendTo('.photos').addClass('.pics').text(`${data.results[i].name}`) 
 
 
 // console.log($img);

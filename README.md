@@ -1,5 +1,5 @@
 # shirsi.github.io
-For this project, I created a fanpage of some of my favorite characters using https://superheroapi.com/ api.
+For this project, I created a fanpage of some of my favorite characters using https://superheroapi.com/ api. I utilized html, css, javascript and jquery to create my website. 
 
 
 I create third different functions for this application. First, carousel for images on the bottom of the page. Then the search and favorite function. Here is a link to my site: https://shirsi.github.io/index.html
